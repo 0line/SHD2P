@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="1378.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerMenu">
+   <top>
+      <HBox id="iphone-toolbar" alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="200.0" stylesheets="@../style/MiEstilo.css" BorderPane.alignment="CENTER">
+         <children>
+            <Pane nodeOrientation="LEFT_TO_RIGHT" prefHeight="124.0" prefWidth="464.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" opacity="0.0" prefHeight="124.0">
+                     <children>
+                        <ImageView fitHeight="73.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/usuario.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lblUsuario" text="Usuario" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+            <ToolBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="124.0" prefWidth="790.0" stylesheets="@../style/MiEstilo.css">
+              <items>
+                <Button id="record-sales" fx:id="btnSalir" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#cerrarSesion" prefWidth="150.0" stylesheets="@../style/MiEstilo.css" text="Salir">
+                     <graphic>
+                        <ImageView fitHeight="72.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/home166.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button id="record-sales" fx:id="btnConf" contentDisplay="RIGHT" mnemonicParsing="false" prefWidth="150.0" stylesheets="@../style/MiEstilo.css" text="Usuarios">
+                     <graphic>
+                        <ImageView fitHeight="72.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/setting5.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button id="record-sales" fx:id="btnMaterias" contentDisplay="RIGHT" mnemonicParsing="false" prefWidth="150.0" stylesheets="@../style/MiEstilo.css" text="Materias">
+                     <graphic>
+                        <ImageView fitHeight="72.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/book244.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button id="record-sales" fx:id="btnMaestro" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#abrirMaestros" prefWidth="150.0" styleClass="record-sales" stylesheets="@../style/MiEstilo.css" text="Maestros">
+                     <graphic>
+                        <ImageView fitHeight="72.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/profile29.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+              </items>
+            </ToolBar>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="254.0" fitWidth="224.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/umbrella.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

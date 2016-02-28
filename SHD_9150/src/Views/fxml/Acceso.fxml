@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="608.0" stylesheets="@../style/MiEstilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerAcceso">
+   <bottom>
+      <Pane id="iphone-toolbar" prefHeight="42.0" prefWidth="608.0" stylesheets="@../style/MiEstilo.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblContenido" layoutX="14.0" layoutY="13.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children></Pane>
+   </bottom>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="244.0" fitWidth="237.0" layoutX="22.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/umbrella.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblUsuario" layoutX="224.0" layoutY="24.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblContrasenia" layoutX="224.0" layoutY="100.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAlias" layoutX="263.0" layoutY="44.0" prefHeight="25.0" prefWidth="313.0" promptText="Usuario">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="pfCon" layoutX="263.0" layoutY="120.0" prefHeight="25.0" prefWidth="314.0" promptText="Contraseña">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </PasswordField>
+            <Button id="record-sales" layoutX="503.0" layoutY="178.0" mnemonicParsing="false" onAction="#login" prefHeight="45.0" prefWidth="49.0">
+               <graphic>
+                  <ImageView fitHeight="47.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/profile29.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
